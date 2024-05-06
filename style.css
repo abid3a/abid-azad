@@ -17,10 +17,13 @@
 	/*padding: 30px 20px;*/
 	position: relative;
 
-	min-height: calc(100vh - 80px - 40px);
+	/*min-height: calc(100vh - 80px - 40px);*/
+	height: auto;
 	text-align: center;
-	
   }
+  /*
+  *** Navigation Bar ***
+  */
   nav{
 	/*background: #66A5AD;*/
 	background: black;
@@ -50,11 +53,14 @@
 	border-radius: 3px;
 	text-transform: uppercase;
   }
-  a.active,a:hover{
+  a.active,nav a:hover{
 	background: transparent;
 	color:bisque;
 	transition: .5s;
   }
+  /*
+  *** Home Page ***
+  */
   .home-box{
 	background-color: #f1f8ff;
     border: 0 solid #000;
@@ -73,7 +79,7 @@
 	width: 37%;
 	height: 100%;
 	background-image: url(images/Abid.jpg);
-	background-size: contain;
+	background-size: cover;
     border: 5px solid #f1f8ff;
     border-radius: 5px;
   }
@@ -87,12 +93,95 @@
 	text-decoration: underline;
 	color: black;
   }
+  /*
+  *** Resume Page ***
+  */
   .resume-background{
 	background-color: rgb(214, 212, 212);
   }
   .resume{
 	margin-top: 30px;
 	margin-bottom: 30px;
+	border:#000;
+	border-radius: 5px;
+  }
+  .resume-link{
+	color: rgb(64, 136, 230);
+	text-decoration: underline;
+  }
+  /*
+  *** About Page ***
+  */
+  .about-body{
+	background:none;
+	background-color: #333f73;
+  }
+  .about-title{
+	height: 250px;
+	width: 800px;
+	background-image: url(images/about-background.jpg);
+	background-position: center;
+	margin:auto;
+	margin-top: 20px;
+	overflow:auto;
+	border-radius: 10px;
+	background-size:cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: white;
+	font-size: 30px;
+  }
+  .about-h1{
+	display: flex;
+	justify-content: center;
+	align-items: left;
+	color:white;
+	text-align: left;
+	max-width: 770px;
+	margin:auto;
+	margin-top: 20px;
+	margin-left: 25px;
+  }
+  .about-h2{
+	display: flex;
+	justify-content: center;
+	align-items: left;
+	color:white;
+	text-align: left;
+	max-width: 770px;
+	margin:auto;
+	margin-top: 20px;
+	margin-left: 85px;
+  }
+  .about-text{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color:white;
+	text-align: left;
+	max-width: 770px;
+	margin:auto;
+	margin-top: 20px;
+	margin-bottom: 50px;
+  }
+
+  /*
+  *** Footer ***
+  */
+  footer{
+	text-align: center;
+	background-color: white;
+	color: black;
+	padding: 20px;
+  }
+
+  .icon{
+	color: black;
+	font-size: 30px;
+	padding: 3px 7px;
+	margin: 0 0 10px;
   }
 
   .checkbtn{
@@ -106,19 +195,6 @@
   }
   #check{
 	display: none;
-  }
-  footer{
-	text-align: center;
-	background-color: white;
-	color: black;
-	padding: 20px;
-  }
-
-  .icon{
-	color: black;
-	font-size: 30px;
-	padding: 3px 7px;
-	margin: 0 0 10px;
   }
 
   /*
